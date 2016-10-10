@@ -1,0 +1,23 @@
+.return-status{
+  display: block;
+  background-color: $medium-blue;
+  padding: 10px;
+  color: $white;
+
+  h2{
+
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+  .your-status{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: $viewport-xs) {
+  .return-status h2{
+    font-size: 20px;
+  }
+
+}

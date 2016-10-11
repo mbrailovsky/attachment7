@@ -1,5 +1,128 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+
+
+
+<div class = "row">
+  <!-- START My Account -->
+  <div class="col-md-4">
+    <div class="my-account large-h1">
+      <h1>Your Account</h1>
+      <hr>
+      <span class="page-description">
+        Welcome to your account dashboard.
+        You can view your return status here,
+        check the status of your refund, make payments,
+        and view your transcript here.
+      </span>
+
+    </div>
+
+    <div class="login-info">
+      <span>Signed in as: </span><span class="users-name"> Maxim Brailovsky</span>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span> View Profile</span>
+        </div>
+        <div class="col-md-6">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+          <span>Sign Out</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END My Account -->
+
+  <!--Start Balance Due -->
+  <div class="col-md-4">
+    <!-- START Return Status -->
+    <div class="return-status padding-bottom">
+      <h2>Return Status:</h2>
+      <hr>
+                  <span class="your-status">
+                    Recieved for 2016
+                  </span>
+      <br/>
+      <br/>
+      <br/>
+      <a class="pull-right" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</a>
+      <br/>
+    </div>
+
+    <div class="balance-due">
+      <h2>Balance Due:</h2>
+      <hr>
+      <span class="amount pull-right">$0.00</span>
+      <br/>
+      <br/>
+      <br/>
+      <a class="pull-right" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> More Info</a>
+      <br/>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="make-payment">
+          Make Payment
+          <i class="fa fa-arrow-circle-right pull-right" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="see-payments">
+          See Payment
+          <i class="fa fa-arrow-circle-right pull-right" aria-hidden="true"></i>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!--END Balance Due -->
+  <!-- START Refund Status -->
+  <div class="col-md-4">
+    <div class="refund-status">
+      <h2>Refund Status:</h2>
+      <hr>
+
+      <div class="row">
+        <div class="col-sm-5 no-right-margin">
+          <img class="refund-approved" src="assets/Refund-Apporved-01.png" align="center" alt="Refund Approved"/>
+        </div>
+        <div class="col-sm-7">
+          <span class="refund-status-txt">Refund Approved</span>
+
+          <p>Your 2016 Refund has been approved.
+            We will send you your refund
+            in a few days.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- END Refund Status -->
+
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-4">
+
+  </div>
+  <!-- END Return Status -->
+
+  <!-- START Balance Due -->
+  <div class="col-md-4">
+
+  </div>
+  <!-- END Balance Due -->
+
+  <!-- START Refund Status -->
+  <div class="col-md-4">
+
+
+  </div>
+  <!-- END Refund Status -->
+</div>

@@ -87,49 +87,25 @@
   <main>
     <div class="container ">
       <div class="main-container">
-        <div class = "row">
+        <div ng-view></div>
 
-          <!-- START My Account -->
-          <div class="col-md-6">
-            <div class="my-account">
-              <h1>Your Account</h1>
-              <span>
-                Welcome to your account dashboard.
-                You can view your return status here,
-                check the status of your refund, make payments,
-                and view your transcript here.
-              </span>
-            </div>
+        <br/>
+        <br/>
+        <ul class="menu">
+          <li><a href="#!/view1">view1</a></li>
+          <li><a href="#!/view2">view2</a></li>
+        </ul>
 
-          </div>
-          <!-- END My Account -->
-
-          <!-- START Return Status -->
-          <div class="col-md-2">
-            <div class="return-status">
-              <h2>Return Status:</h2>
-              <hr>
-              <span class="your-status">
-                Recieved for 2016
-              </span>
-            </div>
-          </div>
-          <!-- END Return Status -->
-
-          <div class="col-md-4">.col-md-4</div>
-        </div>
       </div>
     </div>
 
 
+
   </main>
 
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
 
-  <div ng-view></div>
+
+
 
   <div>Angular seed app: v<span app-version></span></div>
 

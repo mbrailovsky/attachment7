@@ -1,6 +1,6 @@
 .refund-status{
   display: block;
-  background-color: $medium-blue;
+  background-color: $lighter-blue;
   padding: 10px;
   color: $white;
 
@@ -32,8 +32,13 @@
 }
 
 @media (max-width: $viewport-xs) {
-  .refund-status h2{
-    font-size: 20px;
+
+
+}
+
+@media (min-width: $viewport-lg) {
+  .refund-status{
+    height: 200px;
   }
 
 }

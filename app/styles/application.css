@@ -1,11 +1,62 @@
-button {
-  margin-bottom: 10px; }
-  button a {
-    color: #ffffff;
-    text-decoration: none; }
-  button a:hover {
-    color: #ffffff;
-    text-decoration: none; }
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.col-xs-15 {
+  width: 20%;
+  float: left; }
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left; } }
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left; } }
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left; } }
+.btn {
+  border: 0 none;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none; }
+
+.btn-primary {
+  padding: 10px 14px;
+  background: #f0a000;
+  background: -moz-linear-gradient(top, #f0a000 0%, #f0a000 30%, #ff6131 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f0a000), color-stop(30%, #f0a000), color-stop(100%, #ff6131));
+  background: -webkit-linear-gradient(top, #f0a000 0%, #f0a000 30%, #ff6131 100%);
+  background: -o-linear-gradient(top, #f0a000 0%, #f0a000 30%, #ff6131 100%);
+  background: -ms-linear-gradient(top, #f0a000 0%, #f0a000 30%, #ff6131 100%);
+  background: linear-gradient(to bottom, #f0a000 0%, #f0a000 30%, #ff6131 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0a000', endColorstr='#ff6131', GradientType=0 ); }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background: #db9200;
+  background: -moz-linear-gradient(top, #db9200 0%, #db9200 30%, #ff4f1a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #db9200), color-stop(30%, #db9200), color-stop(100%, #ff4f1a));
+  background: -webkit-linear-gradient(top, #db9200 0%, #db9200 30%, #ff4f1a 100%);
+  background: -o-linear-gradient(top, #db9200 0%, #db9200 30%, #ff4f1a 100%);
+  background: -ms-linear-gradient(top, #db9200 0%, #db9200 30%, #ff4f1a 100%);
+  background: linear-gradient(to bottom, #db9200 0%, #db9200 30%, #ff4f1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db9200', endColorstr='#ff4f1a', GradientType=0 ); }
+
+.button-container-right {
+  display: block;
+  text-align: right; }
 
 .blue-bar {
   display: block;
@@ -98,7 +149,7 @@ button {
   margin-left: 15px;
   margin-right: 15px;
   font-family: "Droid Sans", sans-serif;
-  font-size: 15px; }
+  font-size: 16px; }
   .main-container a {
     color: #d6d7d9;
     font-size: 16px; }
@@ -120,8 +171,16 @@ hr {
 .no-left-padding {
   padding-left: 0px; }
 
-.padding-bottom {
+.margin-bottom {
   margin-bottom: 15px; }
+
+.main-divider {
+  border-color: #aeb0b5; }
+
+.align-bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 30px; }
 
 .my-account {
   display: block;
@@ -169,11 +228,14 @@ hr {
     margin-top: 5px;
     font-size: 24px; }
   .return-status .your-status {
-    font-size: 18px; }
+    font-size: 30px; }
 
 @media (max-width: 768px) {
-  .return-status h2 {
+  .return-status.your-status {
     font-size: 20px; } }
+@media (min-width: 1200px) {
+  .return-status {
+    height: 200px; } }
 .balance-due {
   display: block;
   background-color: #112e51;
@@ -197,9 +259,13 @@ hr {
   padding: 10px;
   color: #FFFFFF; }
 
+.payment-icons {
+  text-align: center;
+  font-size: 70px; }
+
 .refund-status {
   display: block;
-  background-color: #0071bc;
+  background-color: #038ad6;
   padding: 10px;
   color: #FFFFFF; }
   .refund-status h2 {
@@ -216,9 +282,61 @@ hr {
     font-size: 20px;
     padding-bottom: 5px; }
 
-@media (max-width: 768px) {
-  .refund-status h2 {
-    font-size: 20px; } }
+@media (min-width: 1200px) {
+  .refund-status {
+    height: 200px; } }
+.transcript-snapshot {
+  display: block;
+  background-color: #205493;
+  padding: 10px;
+  color: #FFFFFF; }
+  .transcript-snapshot h2 {
+    margin-top: 5px;
+    font-size: 24px; }
+  .transcript-snapshot .transcript-table {
+    width: 100%; }
+    .transcript-snapshot .transcript-table td {
+      padding: 5px 0;
+      border: solid thin #aeb0b5;
+      text-align: center; }
+    .transcript-snapshot .transcript-table .transcript-datatype {
+      background-color: #FFFFFF;
+      color: #f23f00;
+      font-weight: bold; }
+
+.get-transcript {
+  display: block;
+  background-color: #0071bc;
+  padding: 10px;
+  color: #FFFFFF; }
+  .get-transcript h2 {
+    margin-top: 5px;
+    font-size: 24px; }
+
+footer {
+  display: block;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: #d6d7d9;
+  padding: 20px; }
+
+ul.links {
+  -webkit-padding-start: 0px; }
+
+.links {
+  list-style: none; }
+  .links li {
+    padding: 3px 0;
+    color: #0071bc; }
+  .links i {
+    color: #f23f00;
+    font-weight: bold; }
+
+.footer-container {
+  margin-left: 15px;
+  margin-right: 15px; }
+
 html, body {
   width: 100%;
   height: 100%;
